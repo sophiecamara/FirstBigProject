@@ -1,0 +1,179 @@
+
+#contactarea{
+width: 100%;
+height:90%;
+position:relative;
+background-color:lightpink;
+}
+form{
+    max-width: 400px;
+    width:90%;
+    background:lightsalmon;
+    margin:17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+     color: lightcoral;
+     font-style: italic;
+     
+}
+label{
+    display:block;
+    margin: 20px 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border-bottom:1px solid rgba(230, 208, 86, 0.301) ;
+
+
+}
+input[type="text"]:focus, textarea:focus{
+    border-bottom: goldenrod;
+
+} 
+ textarea::-webkit-scrollbar{
+    width:50%;
+}
+
+ textarea::-webkit-scrollbar-thumb{
+    background: rgb(19, 104, 58); 
+
+ }
+.center{
+    text-align: left;
+
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 180px;
+    background:linear-gradient(to right, rgb(104, 90, 11)) ;
+    color:rgb(165, 52, 52) ;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.error{
+    color: rgb(224, 103, 103);
+}
+.error-border{
+    border-bottom: 1px solid rgb(224, 103, 103);
+}
+
+
+#success{
+    color: rgb(219, 134, 138);
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper> * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+.header{
+    background-color: lightcoral;
+    height:100px
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20pt;
+}
+.footer{
+    height:40px;
+    background:lightcoral;
+
+}
+.main{
+    text-align: left;
+    background: lightcoral;
+    height: 400px;
+    font-size: 18px;
+}
+.aside1{
+    background: lightcoral;
+}
+.aside2{
+    background: rgb(197, 130, 130);
+    text-transform: capitalize;
+    font-style: italic;
+    font-family:'Poppins', sans-serif;
+    
+}
+
+@media all and (min-width:600px){
+  .main{
+      flex:3
+}  
+.aside1{
+    order: 1;
+}   
+.aside2{
+    order: 2;
+}
+.main{
+    order:2;
+}
+.footer{
+    order:4  
+}
+}
+@media all and (min-width:600px) {
+   .aside {
+       flex:1;
+}
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+li{
+  
+    text-decoration: none;
+    color: rgb(212, 53, 25);
+}
+P{
+    margin-left: 0;
+    font-size:14px;
+}
+.button{
+    width: 80px;
+    height:28px;
+    background-color: lightcoral;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200px;
+    padding-top: 5px;
+    margin-top:20px ;
+}
+.button:hover{
+    background-color: rgb(192, 35, 35);
+}
+.button:active {
+    background-color: indianred;
+}
+.socials{
+    padding-bottom: 200px;
+}
+#logo{
+    height:90px;
+    margin:0px;
+}
